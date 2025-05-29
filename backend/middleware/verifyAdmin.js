@@ -6,7 +6,7 @@ const verifyAdmin = async (req, res, next) => {
         return res.status(401).json({ message: "Unauthorized" });
     }
 
-    const adminId = new mongoose.Types.ObjectId("6823743b572525500b4acdb1");
+    const adminId = new mongoose.Types.ObjectId("683821862fe56bba07fba3a5");
 
 
   if (!user._id.equals(adminId)) {

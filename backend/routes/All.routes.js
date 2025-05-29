@@ -21,6 +21,7 @@ import { verifyAdmin } from "../middleware/verifyAdmin.js";
 import { verifyUser } from "../middleware/verifyUser.js";
 const router = Router();
 
+router.post("/createAdmin", createAdmin);
 router.post("/sendOtp", sendOtp);
 router.post("/verifyOtp", verifyOtp);
 router.post("/login", loginUser);
