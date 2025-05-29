@@ -11,6 +11,7 @@ ghpages.publish(
   {
     branch: 'gh-pages',
     repo: 'https://github.com/Mohit3126/EVM.git',
+    remote: 'origin',
     message: '🚀 Deployed using custom script',
     user: {
       name: 'Mohit3126',
