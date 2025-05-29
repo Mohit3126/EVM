@@ -1,13 +1,13 @@
-const ghpages = require('gh-pages');
+import ghpages from 'gh-pages';
 
 ghpages.publish(
   'dist',
   {
     branch: 'gh-pages',
     repo: 'https://github.com/Mohit3126/EVM.git',
-    message: 'Deploy from custom script'
+    message: 'Deploy from custom script (ESM)',
   },
-  function (err) {
+  (err) => {
     if (err) {
       console.error('❌ Deployment failed:', err);
     } else {
